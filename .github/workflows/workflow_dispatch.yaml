@@ -1,8 +1,12 @@
-name: workflow-diapatch
-on: workflow_dispatch 
+
+name: workflow-dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
   say-hello:
-  runs-on: ubuntu-latest
-  steps:
-    -name: Print Hello
-    run: "Greeting"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello
+        run: echo "Greeting"

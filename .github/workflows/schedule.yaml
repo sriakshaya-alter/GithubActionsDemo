@@ -1,0 +1,14 @@
+
+
+name: 06 - Scheduled Run
+
+on:
+  schedule:
+    - cron: '0 19 * * 0'
+
+jobs:
+  scheduled-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scheduled-run
+        run: echo "Running scheduled job at $(date -u)"
